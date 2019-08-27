@@ -1,3 +1,5 @@
-<p>
-  categories-page works!
-</p>
+<div class="page">
+  <mat-grid-list cols="2">
+    <mat-grid-tile *ngFor="let category of categories; trackBy:category">{{ category }}</mat-grid-tile>
+  </mat-grid-list>
+</div>
