@@ -4,9 +4,12 @@ import { Observable } from 'rxjs';
 import { map, filter } from 'rxjs/operators';
 
 const pages = {
-  ['/']: 'Home',
-  ['/categories']: 'Categories'
-}
+  '/': 'Home',
+  '/add-listing': 'Add listing',
+  '/categories': 'Categories',
+  '/top-list': 'Top list',
+  '/vote-landing': 'Vote'
+};
 
 @Injectable({
   providedIn: 'root'
