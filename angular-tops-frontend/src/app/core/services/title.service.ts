@@ -7,8 +7,8 @@ const pages = {
   '/': 'Home',
   '/add-listing': 'Add listing',
   '/categories': 'Categories',
-  '/top-list': 'Top list',
-  '/vote-landing': 'Vote'
+  '/top': 'Top list',
+  '/vote': 'Vote'
 };
 
 @Injectable({
