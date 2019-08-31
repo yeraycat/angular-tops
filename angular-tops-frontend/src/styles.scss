@@ -1,5 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+
+body {
+    background-color: darken(rgb(208, 253, 255), 60%);
+}
+
+.mat-toolbar {
+    h1 {
+        font-size: 40px;
+    }
+    h1, h2, h3 {
+        font-family: 'Lobster', monospace;
+    }
+}
 
 .page {
     margin: auto;
