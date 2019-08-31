@@ -1,4 +1,6 @@
-export function reducer(state, action) {
+import { CategoriesState } from '../types/state.interface';
+
+export function reducer(state: CategoriesState, action): CategoriesState {
     switch (action.type) {
 
         case '[Categories] Load categories':
