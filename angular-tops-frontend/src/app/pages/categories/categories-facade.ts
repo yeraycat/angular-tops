@@ -15,6 +15,6 @@ export class CategoriesFacade {
     }
 
     getCategories() {
-        this.store.dispatch(new categoriesActions.LoadCategories());
+        this.store.dispatch(new categoriesActions.Load());
     }
 }

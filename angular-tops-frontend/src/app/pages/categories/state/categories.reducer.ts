@@ -1,6 +1,6 @@
 import { CategoriesState } from '../types/state.interface';
 import { createFeatureSelector, createSelector } from '@ngrx/store';
-import { CategiresActionTypes, CategoriesActions } from './categories.actions';
+import { CategoriesActionTypes, CategoriesActions } from './categories.actions';
 
 const initialState: CategoriesState = {
     categoriesList: []
@@ -15,7 +15,7 @@ export const getAllCategories = createSelector(
 
 export function reducer(state = initialState, action: CategoriesActions): CategoriesState {
     switch (action.type) {
-        case CategiresActionTypes.LoadCategories:
+        case CategoriesActionTypes.LoadFail:
             return {
                 ...state,
                 categoriesList: [
