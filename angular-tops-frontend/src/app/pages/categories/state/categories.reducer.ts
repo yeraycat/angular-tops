@@ -1,6 +1,6 @@
 import { CategoriesState } from '../types/state.interface';
 import { createFeatureSelector, createSelector } from '@ngrx/store';
-import { CategiresActionTypes, CategoriesActions } from './actions';
+import { CategiresActionTypes, CategoriesActions } from './categories.actions';
 
 const initialState: CategoriesState = {
     categoriesList: []

@@ -2,8 +2,8 @@ import { Injectable } from '@angular/core';
 import { Store, select } from '@ngrx/store';
 import { Observable } from 'rxjs';
 import { CategoriesState } from './types/state.interface';
-import * as fromCategories from './state/reducer';
-import * as categoriesActions from './state/actions';
+import * as fromCategories from './state/categories.reducer';
+import * as categoriesActions from './state/categories.actions';
 
 @Injectable()
 export class CategoriesFacade {
