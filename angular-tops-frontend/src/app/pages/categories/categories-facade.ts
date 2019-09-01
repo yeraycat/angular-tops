@@ -1,15 +1,16 @@
 import { Injectable } from '@angular/core';
 import { Store, select } from '@ngrx/store';
 import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
+import { CategoriesState } from './types/state.interface';
+import * as fromCategories from './state/reducer';
 
 @Injectable()
 export class CategoriesFacade {
 
     allCategories$: Observable<{id: number, name: string}[]>;
 
-    constructor(private store: Store<any>) {
-        this.allCategories$ = this.store.pipe(select('categories'), map(c => c ? c.categoriesList : null));
+    constructor(private store: Store<CategoriesState>) {
+        this.allCategories$ = this.store.pipe(select(fromCategories.getAllCategories));
     }
 
     getCategories() {
