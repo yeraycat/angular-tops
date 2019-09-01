@@ -3,6 +3,7 @@ import { Store, select } from '@ngrx/store';
 import { Observable } from 'rxjs';
 import { CategoriesState } from './types/state.interface';
 import * as fromCategories from './state/reducer';
+import * as categoriesActions from './state/actions';
 
 @Injectable()
 export class CategoriesFacade {
@@ -14,6 +15,6 @@ export class CategoriesFacade {
     }
 
     getCategories() {
-        this.store.dispatch({type: '[Categories] Load categories'});
+        this.store.dispatch(new categoriesActions.LoadCategories());
     }
 }
