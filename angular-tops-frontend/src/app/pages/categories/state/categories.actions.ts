@@ -1,4 +1,5 @@
 import { Action } from '@ngrx/store';
+import { Category } from '../types/category.interface';
 
 export enum CategoriesActionTypes {
     Load = '[Categories] Load',
@@ -15,14 +16,15 @@ export class Load implements Action {
 export class LoadSuccess implements Action {
     readonly type = CategoriesActionTypes.LoadSuccess;
 
-    constructor() {}
+    constructor(public payload: Category[]) {}
 }
 
 export class LoadFail implements Action {
     readonly type = CategoriesActionTypes.LoadFail;
 
-    constructor() {}
+    constructor(public payload: string) {}
 }
+
 
 export type CategoriesActions = Load
     | LoadSuccess
