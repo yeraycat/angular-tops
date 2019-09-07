@@ -6,6 +6,7 @@ import { MatButtonModule } from '@angular/material/button';
 
 import { MenuComponent } from './components/menu/menu.component';
 import { TitleComponent } from './components/title/title.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [MenuComponent, TitleComponent],
@@ -13,7 +14,8 @@ import { TitleComponent } from './components/title/title.component';
     CommonModule,
     MatToolbarModule,
     MatMenuModule,
-    MatButtonModule
+    MatButtonModule,
+    RouterModule
   ],
   exports: [
     MenuComponent,
