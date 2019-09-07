@@ -1,8 +1,3 @@
-mat-grid-list {
-    &:hover {
-        border: 2px solid darken(rgb(250, 213, 190), 10%);
-    }
-}
 
 mat-grid-tile {
     border-radius: 3px;
@@ -47,6 +42,7 @@ mat-grid-tile:nth-of-type(even) {
     a {
         background: #f2ffff;
         color: #e5c3ae;
+        
 
         &:hover {
             background: darken(#e5c3ae, 10%);   
