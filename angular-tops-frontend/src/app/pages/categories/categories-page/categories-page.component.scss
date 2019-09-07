@@ -25,28 +25,32 @@ mat-grid-tile {
             text-align: center;
             width: 80%;
         }
+
+        &:hover {
+            text-decoration: underline;
+        }
     }   
 }
 mat-grid-tile:nth-of-type(odd) {
 
     a {
-        background: rgb(250, 213, 190);
-        color: rgb(208, 253, 255);
+        background: #e5c3ae;
+        color: #f2ffff;
 
         &:hover {
-            background: darken(rgb(208, 253, 255), 60%);   
-            color: darken(rgb(250, 213, 190), 10%);
+            background: #f2ffff;   
+            color: darken(#e5c3ae, 10%);
         }
     }
 }
 mat-grid-tile:nth-of-type(even) {
     a {
-        background: rgb(208, 253, 255);
-        color: rgb(250, 213, 190);
+        background: #f2ffff;
+        color: #e5c3ae;
 
         &:hover {
-            background: darken(rgb(250, 213, 190), 10%);   
-            color: darken(rgb(208, 253, 255), 60%);
+            background: darken(#e5c3ae, 10%);   
+            color: #f2ffff;
         }
     }
 }
